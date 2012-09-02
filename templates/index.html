@@ -18,7 +18,7 @@
   <xsl:template match="/collections">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="de">
       <head>
-	<title>Blog Harvester</title>
+	<title>Planet Multimedia</title>
 	<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="atom.xml" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss.rdf" />
 	<link rel="alternate" type="application/atom+xml" title="ATOM 1.0 (all)" href="atom-all.xml" />
@@ -36,8 +36,7 @@
       
       <body>
 	<div class="head">
-	  <h1>Blog Harvester</h1>
-	  <img src="chart.jpg" class="chart"/>
+	  <h1>Planet Multimedia</h1>
 	</div>
 	
 	<div class="tickers1">
@@ -53,11 +52,15 @@
           <div class="ticker">
             <h2>Apropos</h2>
             <p>
-              The Harvester is made of fresh flesh from the blogosphere,
-              clean design by Tigion
-              and hacked-together Ruby scripts by Astro,
-              improved by Neingeist and Josef.
+	      If you want your blog to be added, send an email
+	      to <a href="mailto:flameeyes@flameeyes.eu">Diego
+	      Elio Pettenò</a>.
             </p>
+
+	    <p>
+	      Planet Multimedia is aggregated
+	      using <a href="https://github.com/astro/harvester/">Harvester</a>.
+	    </p>
           </div>
           <div class="ticker">
             <h2>To be fed</h2>
@@ -68,40 +71,6 @@
               All collections: <a href="atom-all.xml">ATOM 1.0</a> or <a href="rss-all.rdf">RSS 2.0</a>
             </p>
           </div>
-          <div class="ticker">
-            <h2>Be notified</h2>
-            <p>Start Jabber and talk to <a href="xmpp:astrobot@spaceboyz.net">AstroBot</a> to receive the freshest of all!</p>
-          </div>
-          <div class="ticker">
-            <h2>Questions</h2>
-            <p>Missing something?<br/>Contact <a href="mailto:astro@spaceboyz.net">Astro</a> via Mail or Jabber: astro@spaceboyz.net</p>
-          </div>
-          <div class="ticker">
-            <h2>Hack it&#8230;</h2>
-            <p>
-	      Old <a href="svn://svn.c3d2.de/harvester/trunk/harvester">SVN</a> but now <a href="http://github.com/astro/harvester/">on GitHub</a>.
-            </p>
-          </div>
-          <div class="ticker">
-            <h2>&#8230;or learn more</h2>
-	    <p>
-              <a href="https://wiki.c3d2.de/Harvester">Project info</a>,
-              <a href="svn://svn.c3d2.de/harvester/trunk/harvester">Repository</a>,
-              <a href="http://trac.c3d2.de/harvester">Trac</a>,
-              <a href="http://trac.c3d2.de/harvester/browser/trunk/harvester/">Source browser</a>
-	    </p>
-          </div>
-	  <div class="ticker">
-	    <h2>Other Harvesters</h2>
-            <ul class="tickerlinks">
-	      <!--li><a href="http://chaosnase.de/planet">Chaosnase Planet</a></li-->
-	      <li><a href="http://marvin.blog-harvester.de/">Marvin's Harvester</a></li>
-	      <li><a href="http://planet.entropia.de/">Planet Entropia</a></li>
-	      <li><a href="http://planet.hboeck.de/">Planet Hanno</a></li>
-	      <li><a href="http://planet.schokokeks.org/">Planet Schokokeks</a></li>
-	      <li><a href="http://harvester.toidinamai.de/">toidinamai's planet</a></li>
-	    </ul>
-	  </div>
 
           <xsl:call-template name="ticker-boxen">
             <xsl:with-param name="collection" select="'ticker'"/>
@@ -109,33 +78,6 @@
 
           <xsl:call-template name="ticker-boxen">
             <xsl:with-param name="collection" select="'projects'"/>
-          </xsl:call-template>
-        </div>
-
-        <div class="tickers2">
-	  <div class="ticker">
-	    <h2>Photos</h2>
-
-	    <ul class="photos">
-	      <xsl:for-each select="hv:collection-items('photos')/item">
-
-		<xsl:variable name="title" select="title"/>
-		<xsl:variable name="link" select="link"/>
-
-		<xsl:for-each select="hv:item-images(string(rss),
-				      string(link))//img">
-		  <li>
-		    <a href="{$link}">
-		      <img src="{@src}" title="{$title}"/>
-		    </a>
-		  </li>
-		</xsl:for-each>
-	      </xsl:for-each>
-	    </ul>
-	  </div>
-	  
-          <xsl:call-template name="ticker-boxen">
-            <xsl:with-param name="collection" select="'links'"/>
           </xsl:call-template>
         </div>
 
