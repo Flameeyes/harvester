@@ -4,7 +4,7 @@ db:
   user: harvester
   password: planetmultimedia
 settings:
-  size limit: 102400
+  size limit: 1024000
   timeout: 90
   templates: templates
   output: /var/www/planet.multimedia.cx/public
