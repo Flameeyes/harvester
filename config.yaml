@@ -17,5 +17,16 @@ collections:
   - http://hardwarebug.org/feed/
   - http://www.jbkempf.com/blog/feed/rss2
   - http://www.jpsaman.org/aggregator/rss
+  - http://feeds.feedburner.com/feepk
+  - http://blog.l0cal.com/feed/
+  - http://blogs.gentoo.org/lu_zero/category/multimedia/feed/
+  - http://blog.gingertech.net/feed/
+  - http://blogs.gnome.org/edwardrv/feed/
+  - http://www.remlab.net/feed.xml
   microblogs:
+  # flameeyes
   - http://twitter.com/statuses/user_timeline/14383295.rss
+  # videolan
+  - http://twitter.com/statuses/user_timeline/88776463.rss
+  # silviapfeiffer
+  - http://twitter.com/statuses/user_timeline/7678792.rss
