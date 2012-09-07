@@ -13,7 +13,10 @@ collections:
   - http://blog.flameeyes.eu/category/multimedia.atom
   - "http://codecs.multimedia.cx/?feed=rss2"
   - http://multimedia.cx/eggs/feed/
+  # very old blog for Alex Converse
   - http://blog.case.edu/ajc30/index.rdf
+  # new blog for Alex Converse
+  - http://spectralhole.blogspot.com/feeds/posts/default
   - http://hardwarebug.org/feed/
   - http://www.jbkempf.com/blog/feed/rss2
   - http://www.jpsaman.org/aggregator/rss
