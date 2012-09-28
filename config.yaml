@@ -26,6 +26,7 @@ collections:
   - http://blog.gingertech.net/feed/
   - http://blogs.gnome.org/edwardrv/feed/
   - http://www.remlab.net/feed.xml
+  - http://blogs.gnome.org/rbultje/feed/
   microblogs:
   # flameeyes
   - http://twitter.com/statuses/user_timeline/14383295.rss
