@@ -1,3 +1,4 @@
+/* -*- css -*- */
 /*
  * harvester.css
  *
@@ -358,4 +359,9 @@ html>body .entry img {
 
 .head:hover .chart { 
   display: block;
+}
+
+
+.entry-content pre {
+  overflow: scroll;
 }
