@@ -3,6 +3,7 @@ db:
   driver: dbi:Pg:planetmultimedia
   user: harvester
   password: planetmultimedia
+  port: 9999
 settings:
   size limit: 1024000
   timeout: 90
